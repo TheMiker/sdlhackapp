@@ -1,0 +1,4 @@
+#Sat Sep 14 15:46:47 EDT 2019
+base.0=/Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/build/intermediates/dex/multi_high_bandwidthDebug/mergeDexMulti_high_bandwidthDebug/out
+path.0=classes.dex
+renamed.0=classes.dex

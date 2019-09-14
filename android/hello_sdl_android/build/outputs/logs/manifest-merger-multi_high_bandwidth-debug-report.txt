@@ -1,0 +1,269 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:2:1-68:12
+INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:2:1-68:12
+INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:2:1-68:12
+INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:2:1-68:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/716226108515a104f97e708d943e9ca0/AndroidManifest.xml:17:1-22:12
+MERGED from [:sdl_android] /Users/MichaelRodriguez/sdl_java_suite-master/android/sdl_android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-13:12
+MERGED from [android.arch.lifecycle:extensions:1.1.1] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/04e297cf6141dc39fedee4cec2557332/AndroidManifest.xml:17:1-30:12
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/4225468fa5e2068b680efa17027a65a9/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/0a9ba340d8e91308492e8f282a472b29/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/ec1390db222c98589581d78c2dc1a22b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/f7f01cb3b6d14e265092741c7482dd20/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/7740be645734a09f0c3a66ca4b2274cf/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/733c758a779ad3a25d25a8579cedf9ed/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/7d23a75f426f967ea489a5819556824d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/583ad91b6f7289ef44f12a84267b732f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/bfe5f7530ec18b2640600cbaff9122cc/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/c088053a6e4001156f147a4c6a4000e0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/38ecabdde7382ab111edb724f96c7fbe/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/0fa7ae7ce3a6ba798922fb37031cd762/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/eb9277b27f6f08303df31b6217b97e4f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/9dddc4e9904a70e6c091262c056f3683/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/1fd9ba614d03d43a4f65ab781cccec3a/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/0afc6b578298751fc20b93c503208a81/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/e7840b26a905b2c8a62d0308eaeffd21/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/54dc3dbaa15ebc97bbddd1642f42e944/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/132fefe0a5fbb7c172af34892a7b089c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/416365ed607f19d069cd9eb6a4b58070/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/3915fc1964b78fc5668e61b9aab49d10/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/bf952a51e994ba7d74d5d075ff21a048/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/c2525f3eddcc0df39650a9b1364e48c0/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/3d46d07f7e910d40c515a1e5df3a80ea/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/bd5d891ef27dd06df40b97001dc041b7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.smartdevicelink:bson_java_port:1.2.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/e8a1bdda83ae96c981bb4b611d461284/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:multidex:1.0.2] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/77fac119d78a33eacd6ab3b88d4d419c/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:2:1-68:12
+INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:2:1-68:12
+INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:2:1-68:12
+	package
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:4:11-44
+		INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml
+		INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:2:1-68:12
+		INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:3:11-57
+	android:versionCode
+		INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:2:1-68:12
+		INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.BLUETOOTH
+ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:6:5-68
+	android:name
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:6:22-65
+uses-permission#android.permission.INTERNET
+ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:7:5-67
+	android:name
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:7:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:9:5-79
+	android:name
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:9:22-76
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:10:5-77
+	android:name
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:10:22-74
+uses-feature#android.hardware.usb.accessory
+ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:13:5-67
+	android:name
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:13:19-64
+application
+ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:15:5-66:19
+MERGED from [android.arch.lifecycle:extensions:1.1.1] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/04e297cf6141dc39fedee4cec2557332/AndroidManifest.xml:22:5-28:19
+MERGED from [android.arch.lifecycle:extensions:1.1.1] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/04e297cf6141dc39fedee4cec2557332/AndroidManifest.xml:22:5-28:19
+MERGED from [com.android.support:support-compat:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/9dddc4e9904a70e6c091262c056f3683/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/9dddc4e9904a70e6c091262c056f3683/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/1fd9ba614d03d43a4f65ab781cccec3a/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/1fd9ba614d03d43a4f65ab781cccec3a/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/9dddc4e9904a70e6c091262c056f3683/AndroidManifest.xml:22:18-91
+	android:label
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:18:9-41
+	tools:ignore
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:20:9-33
+	android:icon
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:17:9-43
+	android:allowBackup
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:16:9-36
+	android:theme
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:19:9-40
+activity#com.sdl.hellosdlandroid.MainActivity
+ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:21:9-29:20
+	android:label
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:23:13-45
+	android:name
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:22:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:24:13-28:29
+action#android.intent.action.MAIN
+ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:25:17-69
+	android:name
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:25:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:27:17-77
+	android:name
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:27:27-74
+activity#com.smartdevicelink.transport.USBAccessoryAttachmentActivity
+ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:31:9-40:20
+	android:launchMode
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:32:19-49
+	android:name
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:31:19-94
+intent-filter#action:name:android.hardware.usb.action.USB_ACCESSORY_ATTACHED
+ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:33:13-35:29
+action#android.hardware.usb.action.USB_ACCESSORY_ATTACHED
+ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:34:17-93
+	android:name
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:34:25-90
+meta-data#android.hardware.usb.action.USB_ACCESSORY_ATTACHED
+ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:37:13-39:60
+	android:resource
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:39:17-57
+	android:name
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:38:17-82
+service#com.sdl.hellosdlandroid.SdlService
+ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:42:9-43:19
+	android:name
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:42:18-67
+service#com.sdl.hellosdlandroid.SdlRouterService
+ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:44:9-52:19
+	android:process
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:47:13-57
+	android:exported
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:46:13-36
+	android:name
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:45:13-45
+intent-filter#action:name:com.smartdevicelink.router.service
+ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:48:13-50:29
+action#com.smartdevicelink.router.service
+ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:49:17-76
+	android:name
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:49:25-74
+meta-data#@string/sdl_router_service_version_name
+ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:51:13-140
+	android:value
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:51:80-137
+	android:name
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:51:24-78
+receiver#com.sdl.hellosdlandroid.SdlReceiver
+ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:53:9-63:20
+	android:enabled
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:55:13-35
+	android:exported
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:56:13-36
+	tools:ignore
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:57:13-44
+	android:name
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:54:13-40
+intent-filter#action:name:android.bluetooth.device.action.ACL_CONNECTED+action:name:com.smartdevicelink.USB_ACCESSORY_ATTACHED+action:name:sdl.router.startservice
+ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:58:13-62:29
+action#com.smartdevicelink.USB_ACCESSORY_ATTACHED
+ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:59:17-84
+	android:name
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:59:25-82
+action#android.bluetooth.device.action.ACL_CONNECTED
+ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:60:17-88
+	android:name
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:60:25-85
+action#sdl.router.startservice
+ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:61:17-66
+	android:name
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:61:25-63
+activity#com.smartdevicelink.managers.lockscreen.SDLLockScreenActivity
+ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:64:9-65:51
+	android:launchMode
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:65:19-49
+	android:name
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:64:19-95
+uses-sdk
+INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml
+INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/716226108515a104f97e708d943e9ca0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/716226108515a104f97e708d943e9ca0/AndroidManifest.xml:20:5-44
+MERGED from [:sdl_android] /Users/MichaelRodriguez/sdl_java_suite-master/android/sdl_android/build/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-11:318
+MERGED from [:sdl_android] /Users/MichaelRodriguez/sdl_java_suite-master/android/sdl_android/build/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-11:318
+MERGED from [android.arch.lifecycle:extensions:1.1.1] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/04e297cf6141dc39fedee4cec2557332/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:extensions:1.1.1] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/04e297cf6141dc39fedee4cec2557332/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/4225468fa5e2068b680efa17027a65a9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/4225468fa5e2068b680efa17027a65a9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/0a9ba340d8e91308492e8f282a472b29/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/0a9ba340d8e91308492e8f282a472b29/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/ec1390db222c98589581d78c2dc1a22b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/ec1390db222c98589581d78c2dc1a22b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/f7f01cb3b6d14e265092741c7482dd20/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/f7f01cb3b6d14e265092741c7482dd20/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/7740be645734a09f0c3a66ca4b2274cf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/7740be645734a09f0c3a66ca4b2274cf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/733c758a779ad3a25d25a8579cedf9ed/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/733c758a779ad3a25d25a8579cedf9ed/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/7d23a75f426f967ea489a5819556824d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/7d23a75f426f967ea489a5819556824d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/583ad91b6f7289ef44f12a84267b732f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/583ad91b6f7289ef44f12a84267b732f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/bfe5f7530ec18b2640600cbaff9122cc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/bfe5f7530ec18b2640600cbaff9122cc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/c088053a6e4001156f147a4c6a4000e0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/c088053a6e4001156f147a4c6a4000e0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/38ecabdde7382ab111edb724f96c7fbe/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/38ecabdde7382ab111edb724f96c7fbe/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/0fa7ae7ce3a6ba798922fb37031cd762/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/0fa7ae7ce3a6ba798922fb37031cd762/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/eb9277b27f6f08303df31b6217b97e4f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/eb9277b27f6f08303df31b6217b97e4f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/9dddc4e9904a70e6c091262c056f3683/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/9dddc4e9904a70e6c091262c056f3683/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/1fd9ba614d03d43a4f65ab781cccec3a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/1fd9ba614d03d43a4f65ab781cccec3a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/0afc6b578298751fc20b93c503208a81/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/0afc6b578298751fc20b93c503208a81/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/e7840b26a905b2c8a62d0308eaeffd21/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/e7840b26a905b2c8a62d0308eaeffd21/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/54dc3dbaa15ebc97bbddd1642f42e944/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/54dc3dbaa15ebc97bbddd1642f42e944/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/132fefe0a5fbb7c172af34892a7b089c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/132fefe0a5fbb7c172af34892a7b089c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/416365ed607f19d069cd9eb6a4b58070/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/416365ed607f19d069cd9eb6a4b58070/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/3915fc1964b78fc5668e61b9aab49d10/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/3915fc1964b78fc5668e61b9aab49d10/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/bf952a51e994ba7d74d5d075ff21a048/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/bf952a51e994ba7d74d5d075ff21a048/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/c2525f3eddcc0df39650a9b1364e48c0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/c2525f3eddcc0df39650a9b1364e48c0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/3d46d07f7e910d40c515a1e5df3a80ea/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/3d46d07f7e910d40c515a1e5df3a80ea/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/bd5d891ef27dd06df40b97001dc041b7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/bd5d891ef27dd06df40b97001dc041b7/AndroidManifest.xml:20:5-44
+MERGED from [com.smartdevicelink:bson_java_port:1.2.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/e8a1bdda83ae96c981bb4b611d461284/AndroidManifest.xml:7:5-9:41
+MERGED from [com.smartdevicelink:bson_java_port:1.2.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/e8a1bdda83ae96c981bb4b611d461284/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:multidex:1.0.2] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/77fac119d78a33eacd6ab3b88d4d419c/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:multidex:1.0.2] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/77fac119d78a33eacd6ab3b88d4d419c/AndroidManifest.xml:20:5-43
+INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml
+INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [:sdl_android] /Users/MichaelRodriguez/sdl_java_suite-master/android/sdl_android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:9-315
+	android:targetSdkVersion
+		INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml
+		INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml
+		INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml
+provider#android.arch.lifecycle.ProcessLifecycleOwnerInitializer
+ADDED from [android.arch.lifecycle:extensions:1.1.1] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/04e297cf6141dc39fedee4cec2557332/AndroidManifest.xml:23:9-27:43
+	android:authorities
+		ADDED from [android.arch.lifecycle:extensions:1.1.1] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/04e297cf6141dc39fedee4cec2557332/AndroidManifest.xml:25:13-68
+	android:multiprocess
+		ADDED from [android.arch.lifecycle:extensions:1.1.1] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/04e297cf6141dc39fedee4cec2557332/AndroidManifest.xml:27:13-40
+	android:exported
+		ADDED from [android.arch.lifecycle:extensions:1.1.1] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/04e297cf6141dc39fedee4cec2557332/AndroidManifest.xml:26:13-37
+	android:name
+		ADDED from [android.arch.lifecycle:extensions:1.1.1] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/04e297cf6141dc39fedee4cec2557332/AndroidManifest.xml:24:13-83

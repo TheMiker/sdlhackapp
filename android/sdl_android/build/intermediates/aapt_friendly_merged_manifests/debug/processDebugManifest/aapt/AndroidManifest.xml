@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.smartdevicelink"
+    android:versionCode="11"
+    android:versionName="4.9.1" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="26"
+        tools:overrideLibrary="android.arch.lifecycle, android.arch.lifecycle.extensions, android.arch.lifecycle.livedata, android.arch.lifecycle.livedata.core, android.arch.core, android.arch.lifecycle.viewmodel, android.support.fragment, android.support.coreui, android.support.coreutils, android.support.compat" />
+
+</manifest>

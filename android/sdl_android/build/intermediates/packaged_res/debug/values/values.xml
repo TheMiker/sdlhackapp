@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="sdl_router_service_version_value">9</integer>
+    <string name="SDL_LIB_VERSION" translatable="false">"4.9.1"</string>
+    <string name="lockscreen_device_image_description">Device Icon</string>
+    <string name="lockscreen_image_description">SDL Icon</string>
+    <string name="lockscreen_text">Locked for your safety</string>
+    <string name="sdl_router_service_is_custom_name" translatable="false">sdl_custom_router</string>
+    <string name="sdl_router_service_version_name" translatable="false">sdl_router_version</string>
+</resources>

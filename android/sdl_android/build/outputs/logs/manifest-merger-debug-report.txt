@@ -1,0 +1,41 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/sdl_android/src/main/AndroidManifest.xml:1:1-4:12
+INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/sdl_android/src/main/AndroidManifest.xml:1:1-4:12
+INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/sdl_android/src/main/AndroidManifest.xml:1:1-4:12
+INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/sdl_android/src/main/AndroidManifest.xml:1:1-4:12
+INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/sdl_android/src/main/AndroidManifest.xml:1:1-4:12
+INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/sdl_android/src/main/AndroidManifest.xml:1:1-4:12
+INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/sdl_android/src/main/AndroidManifest.xml:1:1-4:12
+	package
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/sdl_android/src/main/AndroidManifest.xml:1:11-40
+		INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/sdl_android/src/main/AndroidManifest.xml
+		INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/sdl_android/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/sdl_android/src/main/AndroidManifest.xml
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/sdl_android/src/main/AndroidManifest.xml:1:1-4:12
+		INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/sdl_android/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/sdl_android/src/main/AndroidManifest.xml:2:11-57
+	xmlns:android
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/sdl_android/src/main/AndroidManifest.xml:1:1-4:12
+	android:versionCode
+		INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/sdl_android/src/main/AndroidManifest.xml
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/sdl_android/src/main/AndroidManifest.xml:1:1-4:12
+		INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/sdl_android/src/main/AndroidManifest.xml
+uses-sdk
+ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/sdl_android/src/main/AndroidManifest.xml:3:5-324
+INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/sdl_android/src/main/AndroidManifest.xml:3:5-324
+INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/sdl_android/src/main/AndroidManifest.xml:3:5-324
+INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/sdl_android/src/main/AndroidManifest.xml:3:5-324
+INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/sdl_android/src/main/AndroidManifest.xml:3:5-324
+	tools:overrideLibrary
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/sdl_android/src/main/AndroidManifest.xml:3:15-321
+	android:targetSdkVersion
+		INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/sdl_android/src/main/AndroidManifest.xml
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/sdl_android/src/main/AndroidManifest.xml:3:5-324
+		INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/sdl_android/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/sdl_android/src/main/AndroidManifest.xml
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/sdl_android/src/main/AndroidManifest.xml:3:5-324
+		INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/sdl_android/src/main/AndroidManifest.xml
