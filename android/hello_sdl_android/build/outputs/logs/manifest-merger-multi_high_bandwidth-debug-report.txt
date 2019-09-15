@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:2:1-69:12
-INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:2:1-69:12
-INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:2:1-69:12
-INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:2:1-69:12
+ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:2:1-70:12
+INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:2:1-70:12
+INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:2:1-70:12
+INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:2:1-70:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/716226108515a104f97e708d943e9ca0/AndroidManifest.xml:17:1-22:12
 MERGED from [:sdl_android] /Users/MichaelRodriguez/sdl_java_suite-master/android/sdl_android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-13:12
 MERGED from [android.arch.lifecycle:extensions:1.1.1] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/04e297cf6141dc39fedee4cec2557332/AndroidManifest.xml:17:1-30:12
@@ -34,22 +34,22 @@ MERGED from [android.arch.core:runtime:1.1.1] /Users/MichaelRodriguez/.gradle/ca
 MERGED from [com.android.support:interpolator:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/bd5d891ef27dd06df40b97001dc041b7/AndroidManifest.xml:17:1-22:12
 MERGED from [com.smartdevicelink:bson_java_port:1.2.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/e8a1bdda83ae96c981bb4b611d461284/AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:multidex:1.0.2] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/77fac119d78a33eacd6ab3b88d4d419c/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:2:1-69:12
-INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:2:1-69:12
-INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:2:1-69:12
+INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:2:1-70:12
+INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:2:1-70:12
+INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:2:1-70:12
 	package
 		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:4:11-44
 		INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml
 		INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml
-		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:2:1-69:12
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:2:1-70:12
 		INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml
 	xmlns:tools
 		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:3:11-57
 	android:versionCode
 		INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml
-		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:2:1-69:12
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:2:1-70:12
 		INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:2:11-69
@@ -69,12 +69,16 @@ uses-permission#android.permission.FOREGROUND_SERVICE
 ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:10:5-77
 	android:name
 		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:10:22-74
-uses-feature#android.hardware.usb.accessory
-ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:13:5-67
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:11:5-79
 	android:name
-		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:13:19-64
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:11:22-76
+uses-feature#android.hardware.usb.accessory
+ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:14:5-67
+	android:name
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:14:19-64
 application
-ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:15:5-67:19
+ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:16:5-68:19
 MERGED from [android.arch.lifecycle:extensions:1.1.1] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/04e297cf6141dc39fedee4cec2557332/AndroidManifest.xml:22:5-28:19
 MERGED from [android.arch.lifecycle:extensions:1.1.1] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/04e297cf6141dc39fedee4cec2557332/AndroidManifest.xml:22:5-28:19
 MERGED from [com.android.support:support-compat:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/9dddc4e9904a70e6c091262c056f3683/AndroidManifest.xml:22:5-94
@@ -84,105 +88,105 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/MichaelRodri
 	android:appComponentFactory
 		ADDED from [com.android.support:support-compat:28.0.0] /Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/9dddc4e9904a70e6c091262c056f3683/AndroidManifest.xml:22:18-91
 	android:label
-		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:19:9-41
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:20:9-41
 	tools:ignore
-		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:21:9-33
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:22:9-33
 	android:icon
-		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:18:9-43
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:19:9-43
 	android:allowBackup
-		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:16:9-36
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:17:9-36
 	android:theme
-		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:20:9-40
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:21:9-40
 	android:usesCleartextTraffic
-		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:17:9-44
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:18:9-44
 activity#com.sdl.hellosdlandroid.MainActivity
-ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:22:9-30:20
+ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:23:9-31:20
 	android:label
-		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:24:13-45
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:25:13-45
 	android:name
-		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:23:13-41
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:24:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:25:13-29:29
+ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:26:13-30:29
 action#android.intent.action.MAIN
-ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:26:17-69
+ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:27:17-69
 	android:name
-		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:26:25-66
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:27:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:28:17-77
+ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:29:17-77
 	android:name
-		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:28:27-74
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:29:27-74
 activity#com.smartdevicelink.transport.USBAccessoryAttachmentActivity
-ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:32:9-41:20
+ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:33:9-42:20
 	android:launchMode
-		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:33:19-49
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:34:19-49
 	android:name
-		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:32:19-94
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:33:19-94
 intent-filter#action:name:android.hardware.usb.action.USB_ACCESSORY_ATTACHED
-ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:34:13-36:29
+ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:35:13-37:29
 action#android.hardware.usb.action.USB_ACCESSORY_ATTACHED
-ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:35:17-93
+ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:36:17-93
 	android:name
-		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:35:25-90
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:36:25-90
 meta-data#android.hardware.usb.action.USB_ACCESSORY_ATTACHED
-ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:38:13-40:60
+ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:39:13-41:60
 	android:resource
-		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:40:17-57
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:41:17-57
 	android:name
-		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:39:17-82
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:40:17-82
 service#com.sdl.hellosdlandroid.SdlService
-ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:43:9-44:19
+ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:44:9-45:19
 	android:name
-		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:43:18-67
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:44:18-67
 service#com.sdl.hellosdlandroid.SdlRouterService
-ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:45:9-53:19
+ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:46:9-54:19
 	android:process
-		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:48:13-57
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:49:13-57
 	android:exported
-		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:47:13-36
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:48:13-36
 	android:name
-		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:46:13-45
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:47:13-45
 intent-filter#action:name:com.smartdevicelink.router.service
-ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:49:13-51:29
+ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:50:13-52:29
 action#com.smartdevicelink.router.service
-ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:50:17-76
+ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:51:17-76
 	android:name
-		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:50:25-74
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:51:25-74
 meta-data#@string/sdl_router_service_version_name
-ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:52:13-140
+ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:53:13-140
 	android:value
-		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:52:80-137
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:53:80-137
 	android:name
-		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:52:24-78
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:53:24-78
 receiver#com.sdl.hellosdlandroid.SdlReceiver
-ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:54:9-64:20
+ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:55:9-65:20
 	android:enabled
-		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:56:13-35
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:57:13-35
 	android:exported
-		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:57:13-36
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:58:13-36
 	tools:ignore
-		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:58:13-44
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:59:13-44
 	android:name
-		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:55:13-40
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:56:13-40
 intent-filter#action:name:android.bluetooth.device.action.ACL_CONNECTED+action:name:com.smartdevicelink.USB_ACCESSORY_ATTACHED+action:name:sdl.router.startservice
-ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:59:13-63:29
+ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:60:13-64:29
 action#com.smartdevicelink.USB_ACCESSORY_ATTACHED
-ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:60:17-84
+ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:61:17-84
 	android:name
-		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:60:25-82
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:61:25-82
 action#android.bluetooth.device.action.ACL_CONNECTED
-ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:61:17-88
+ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:62:17-88
 	android:name
-		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:61:25-85
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:62:25-85
 action#sdl.router.startservice
-ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:62:17-66
+ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:63:17-66
 	android:name
-		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:62:25-63
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:63:25-63
 activity#com.smartdevicelink.managers.lockscreen.SDLLockScreenActivity
-ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:65:9-66:51
+ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:66:9-67:51
 	android:launchMode
-		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:66:19-49
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:67:19-49
 	android:name
-		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:65:19-95
+		ADDED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml:66:19-95
 uses-sdk
 INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/src/main/AndroidManifest.xml

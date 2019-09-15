@@ -46,28 +46,17 @@ import java.util.List;
 import java.util.Vector;
 
 public class SdlService extends Service {
-	//8678309
 	private static final String TAG = "SDL Service";
-
 	private static final String APP_NAME = "Hello Sdl";
 	private static final String APP_ID = "1234";
-
 	private static final String ICON_FILENAME = "hello_sdl_icon.png";
 	private static final String SDL_IMAGE_FILENAME = "sdl_full_image.png";
-
 	private static final String WELCOME_SHOW = "Welcome to HelloSDL";
 	private static final String WELCOME_SPEAK = "Welcome to Hello S D L";
-
 	private static final String TEST_COMMAND_NAME = "Test Command";
-
 	private static final int FOREGROUND_SERVICE_ID = 111;
-
-	// TCP/IP transport config
-	// The default port is 12345
-	// The IP is of the machine that is running SDL Core
 	private static final int TCP_PORT = 12247;
 	private static final String DEV_MACHINE_IP_ADDRESS = "m.sdl.tools";
-
 	// variable to create and call functions of the SyncProxy
 	private SdlManager sdlManager = null;
 	private List<ChoiceCell> choiceCellList;

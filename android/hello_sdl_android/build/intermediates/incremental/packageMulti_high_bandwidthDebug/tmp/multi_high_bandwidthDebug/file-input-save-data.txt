@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sat Sep 14 20:23:42 EDT 2019
+#Sun Sep 15 00:45:57 EDT 2019
 2.base=/Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/build/intermediates/transforms/mergeJniLibs/multi_high_bandwidth/debug/0
 5.set=DEX
 0.path=lib/x86/libbson-c-lib.so
