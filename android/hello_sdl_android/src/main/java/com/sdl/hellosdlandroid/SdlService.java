@@ -361,6 +361,16 @@ public class SdlService extends Service {
 		sdlManager.getScreenManager().preloadChoices(choiceCellList, null);
 	}
 
+
+
+	private void speakMessage(String message) {
+		sdlManager.sendRPC(new Speak(TTSChunkFactory.createSimpleTTSChunks("New Message Found.." + message)));
+
+	}
+
+
+
+
 	private void showPerformInteraction() {
 		if (choiceCellList != null) {
 			ChoiceSet choiceSet = new ChoiceSet("Choose an Item from the list", choiceCellList, new ChoiceSetSelectionListener() {
