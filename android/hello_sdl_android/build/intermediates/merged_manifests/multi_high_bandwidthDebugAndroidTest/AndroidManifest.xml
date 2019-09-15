@@ -3,7 +3,7 @@
     package="com.sdl.hellosdlandroid.test" >
 
     <uses-sdk
-        android:minSdkVersion="14"
+        android:minSdkVersion="25"
         android:targetSdkVersion="28" />
 
     <instrumentation

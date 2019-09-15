@@ -1,6 +1,7 @@
 package com.sdl.hellosdlandroid;
 
 import android.annotation.SuppressLint;
+import android.app.DownloadManager;
 import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -10,7 +11,6 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.IBinder;
 import android.util.Log;
-
 import com.smartdevicelink.managers.CompletionListener;
 import com.smartdevicelink.managers.SdlManager;
 import com.smartdevicelink.managers.SdlManagerListener;
@@ -46,19 +46,19 @@ import java.util.List;
 import java.util.Vector;
 
 public class SdlService extends Service {
-//8678309
-	private static final String TAG 					= "SDL Service";
+	//8678309
+	private static final String TAG = "SDL Service";
 
-	private static final String APP_NAME 				= "Hello Sdl";
-	private static final String APP_ID 					= "1234";
+	private static final String APP_NAME = "Hello Sdl";
+	private static final String APP_ID = "1234";
 
-	private static final String ICON_FILENAME 			= "hello_sdl_icon.png";
-	private static final String SDL_IMAGE_FILENAME  	= "sdl_full_image.png";
+	private static final String ICON_FILENAME = "hello_sdl_icon.png";
+	private static final String SDL_IMAGE_FILENAME = "sdl_full_image.png";
 
-	private static final String WELCOME_SHOW 			= "Welcome to HelloSDL";
-	private static final String WELCOME_SPEAK 			= "Welcome to Hello S D L";
+	private static final String WELCOME_SHOW = "Welcome to HelloSDL";
+	private static final String WELCOME_SPEAK = "Welcome to Hello S D L";
 
-	private static final String TEST_COMMAND_NAME 		= "Test Command";
+	private static final String TEST_COMMAND_NAME = "Test Command";
 
 	private static final int FOREGROUND_SERVICE_ID = 111;
 
@@ -130,7 +130,7 @@ public class SdlService extends Service {
 		if (sdlManager == null) {
 			Log.i(TAG, "Starting SDL Proxy");
 			// Enable DebugTool for debug build type
-			if (BuildConfig.DEBUG){
+			if (BuildConfig.DEBUG) {
 				DebugTool.enableDebugTool();
 			}
 
@@ -142,6 +142,7 @@ public class SdlService extends Service {
 
 			// The manager listener helps you know when certain events that pertain to the SDL Manager happen
 			// Here we will listen for ON_HMI_STATUS and ON_COMMAND notifications
+
 			SdlManagerListener listener = new SdlManagerListener() {
 				@Override
 				public void onStart() {
@@ -187,7 +188,7 @@ public class SdlService extends Service {
 	/**
 	 * Send some voice commands
 	 */
-	private void setVoiceCommands(){
+	private void setVoiceCommands() {
 
 		List<String> list1 = Collections.singletonList("Command One");
 		List<String> list2 = Collections.singletonList("Command two");
@@ -206,13 +207,13 @@ public class SdlService extends Service {
 			}
 		});
 
-		sdlManager.getScreenManager().setVoiceCommands(Arrays.asList(voiceCommand1,voiceCommand2));
+		sdlManager.getScreenManager().setVoiceCommands(Arrays.asList(voiceCommand1, voiceCommand2));
 	}
 
 	/**
-	 *  Add menus for the app on SDL.
+	 * Add menus for the app on SDL.
 	 */
-	private void sendMenus(){
+	private void sendMenus() {
 
 		// some arts
 		SdlArtwork livio = new SdlArtwork("livio", FileType.GRAPHIC_PNG, R.drawable.sdl, false);
@@ -223,7 +224,7 @@ public class SdlService extends Service {
 		MenuCell mainCell1 = new MenuCell("Test Cell 1 (speak)", livio, null, new MenuSelectionListener() {
 			@Override
 			public void onTriggered(TriggerSource trigger) {
-				Log.i(TAG, "Test cell 1 triggered. Source: "+ trigger.toString());
+				Log.i(TAG, "Test cell 1 triggered. Source: " + trigger.toString());
 				showTest();
 			}
 		});
@@ -231,28 +232,28 @@ public class SdlService extends Service {
 		MenuCell mainCell2 = new MenuCell("Test Cell 2", null, voice2, new MenuSelectionListener() {
 			@Override
 			public void onTriggered(TriggerSource trigger) {
-				Log.i(TAG, "Test cell 2 triggered. Source: "+ trigger.toString());
+				Log.i(TAG, "Test cell 2 triggered. Source: " + trigger.toString());
 			}
 		});
 
 		// SUB MENU
 
-		MenuCell subCell1 = new MenuCell("SubCell 1",null, null, new MenuSelectionListener() {
+		MenuCell subCell1 = new MenuCell("SubCell 1", null, null, new MenuSelectionListener() {
 			@Override
 			public void onTriggered(TriggerSource trigger) {
-				Log.i(TAG, "Sub cell 1 triggered. Source: "+ trigger.toString());
+				Log.i(TAG, "Sub cell 1 triggered. Source: " + trigger.toString());
 			}
 		});
 
-		MenuCell subCell2 = new MenuCell("SubCell 2",null, null, new MenuSelectionListener() {
+		MenuCell subCell2 = new MenuCell("SubCell 2", null, null, new MenuSelectionListener() {
 			@Override
 			public void onTriggered(TriggerSource trigger) {
-				Log.i(TAG, "Sub cell 2 triggered. Source: "+ trigger.toString());
+				Log.i(TAG, "Sub cell 2 triggered. Source: " + trigger.toString());
 			}
 		});
 
 		// sub menu parent cell
-		MenuCell mainCell3 = new MenuCell("Test Cell 3 (sub menu)", null, Arrays.asList(subCell1,subCell2));
+		MenuCell mainCell3 = new MenuCell("Test Cell 3 (sub menu)", null, Arrays.asList(subCell1, subCell2));
 
 		MenuCell mainCell4 = new MenuCell("Show Perform Interaction", null, null, new MenuSelectionListener() {
 			@Override
@@ -261,10 +262,10 @@ public class SdlService extends Service {
 			}
 		});
 
-		MenuCell mainCell5 = new MenuCell("Clear the menu",null, null, new MenuSelectionListener() {
+		MenuCell mainCell5 = new MenuCell("Clear the menu", null, null, new MenuSelectionListener() {
 			@Override
 			public void onTriggered(TriggerSource trigger) {
-				Log.i(TAG, "Clearing Menu. Source: "+ trigger.toString());
+				Log.i(TAG, "Clearing Menu. Source: " + trigger.toString());
 				// Clear this thing
 				sdlManager.getScreenManager().setMenu(Collections.<MenuCell>emptyList());
 				showAlert("Menu Cleared");
@@ -278,7 +279,7 @@ public class SdlService extends Service {
 	/**
 	 * Will speak a sample welcome message
 	 */
-	private void performWelcomeSpeak(){
+	private void performWelcomeSpeak() {
 		sdlManager.sendRPC(new Speak(TTSChunkFactory.createSimpleTTSChunks(WELCOME_SPEAK)));
 	}
 
@@ -295,7 +296,7 @@ public class SdlService extends Service {
 		sdlManager.getScreenManager().commit(new CompletionListener() {
 			@Override
 			public void onComplete(boolean success) {
-				if (success){
+				if (success) {
 					Log.i(TAG, "welcome show successful");
 				}
 			}
@@ -305,7 +306,7 @@ public class SdlService extends Service {
 	/**
 	 * Will show a sample test message on screen as well as speak a sample test message
 	 */
-	private void showTest(){
+	private void showTest() {
 		sdlManager.getScreenManager().beginTransaction();
 		sdlManager.getScreenManager().setTextField1("Test Cell 1 has been selected");
 		sdlManager.getScreenManager().setTextField2("");
@@ -314,7 +315,7 @@ public class SdlService extends Service {
 		sdlManager.sendRPC(new Speak(TTSChunkFactory.createSimpleTTSChunks(TEST_COMMAND_NAME)));
 	}
 
-	private void showAlert(String text){
+	private void showAlert(String text) {
 		Alert alert = new Alert();
 		alert.setAlertText1(text);
 		alert.setDuration(5000);
@@ -323,15 +324,15 @@ public class SdlService extends Service {
 
 	// Choice Set
 
-	private void preloadChoices(){
+	private void preloadChoices() {
 		ChoiceCell cell1 = new ChoiceCell("Item 1");
 		ChoiceCell cell2 = new ChoiceCell("Item 2");
 		ChoiceCell cell3 = new ChoiceCell("Item 3");
-		choiceCellList = new ArrayList<>(Arrays.asList(cell1,cell2,cell3));
+		choiceCellList = new ArrayList<>(Arrays.asList(cell1, cell2, cell3));
 		sdlManager.getScreenManager().preloadChoices(choiceCellList, null);
 	}
 
-	private void showPerformInteraction(){
+	private void showPerformInteraction() {
 		if (choiceCellList != null) {
 			ChoiceSet choiceSet = new ChoiceSet("Choose an Item from the list", choiceCellList, new ChoiceSetSelectionListener() {
 				@Override
@@ -341,10 +342,12 @@ public class SdlService extends Service {
 
 				@Override
 				public void onError(String error) {
-					Log.e(TAG, "There was an error showing the perform interaction: "+ error);
+					Log.e(TAG, "There was an error showing the perform interaction: " + error);
 				}
 			});
 			sdlManager.getScreenManager().presentChoiceSet(choiceSet, InteractionMode.MANUAL_ONLY);
 		}
 	}
+
+
 }

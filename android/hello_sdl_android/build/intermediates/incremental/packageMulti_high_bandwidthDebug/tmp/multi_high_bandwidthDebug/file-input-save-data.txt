@@ -1,23 +1,31 @@
 #Internal package file, do not edit.
-#Sat Sep 14 15:46:48 EDT 2019
+#Sat Sep 14 20:23:42 EDT 2019
 2.base=/Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/build/intermediates/transforms/mergeJniLibs/multi_high_bandwidth/debug/0
+5.set=DEX
 0.path=lib/x86/libbson-c-lib.so
 2.baseType=DIRECTORY
 3.base=/Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/build/intermediates/transforms/mergeJniLibs/multi_high_bandwidth/debug/0
 2.set=NATIVE_RESOURCE
 1.path=lib/arm64-v8a/libbson-c-lib.so
-4.base=/Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/build/intermediates/dex/multi_high_bandwidthDebug/mergeDexMulti_high_bandwidthDebug/out
-count=5
+4.base=/Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/build/intermediates/dex/multi_high_bandwidthDebug/mergeProjectDexMulti_high_bandwidthDebug/out
+count=7
+5.baseType=DIRECTORY
 2.path=lib/x86_64/libbson-c-lib.so
+5.base=/Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/build/intermediates/dex/multi_high_bandwidthDebug/mergeExtDexMulti_high_bandwidthDebug/out
 4.set=DEX
 3.path=lib/armeabi-v7a/libbson-c-lib.so
+6.base=/Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/build/intermediates/dex/multi_high_bandwidthDebug/mergeLibDexMulti_high_bandwidthDebug/out
 3.baseType=DIRECTORY
 1.set=NATIVE_RESOURCE
 4.path=classes.dex
+6.set=DEX
 1.baseType=DIRECTORY
+6.baseType=DIRECTORY
+5.path=classes.dex
 0.base=/Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/build/intermediates/transforms/mergeJniLibs/multi_high_bandwidth/debug/0
 0.baseType=DIRECTORY
 3.set=NATIVE_RESOURCE
+6.path=classes_0.dex
 1.base=/Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/build/intermediates/transforms/mergeJniLibs/multi_high_bandwidth/debug/0
 4.baseType=DIRECTORY
 0.set=NATIVE_RESOURCE
