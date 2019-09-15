@@ -41,9 +41,9 @@ import static com.smartdevicelink.proxy.constants.Names.url;
 public class MainActivity extends AppCompatActivity {
 	private static final String TAG = "MainActivity";
 	public Context mContext;
-	public LocationManager mLocationManager;
+	static public LocationManager mLocationManager;
 	public static final int MY_PERMISSIONS_REQUEST_LOCATION = 99;
-
+	public static LocationListener myLocationListenerGPS;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -56,8 +56,7 @@ public class MainActivity extends AppCompatActivity {
 			Intent proxyIntent = new Intent(this, SdlService.class);
 			startService(proxyIntent);
 		}
-		LocationManager locationManager = (LocationManager)
-				getSystemService(Context.LOCATION_SERVICE);
+		LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
 		mLocationManager = locationManager;
 		System.out.println("before post");
 		post_message("this is 0, 0", 0,0);
@@ -88,7 +87,8 @@ public class MainActivity extends AppCompatActivity {
 
 			}
 		};
-		if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+		myLocationListenerGPS = locationListenerGPS;
+		if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
 			locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER,
 					2000,
 					10, locationListenerGPS);
@@ -153,7 +153,7 @@ public class MainActivity extends AppCompatActivity {
 
 	}
 
-	public void get_message(double latitude, double longitude) {
+	public static void get_message(double latitude, double longitude) {
 		System.out.println("In Get");
 		OkHttpClient client = new OkHttpClient();
 		String lat = Double.toString(latitude);
@@ -194,7 +194,7 @@ public class MainActivity extends AppCompatActivity {
 
 	}
 
-	public void post_message(String statement, double latitude, double longitude) {
+	public static void post_message(String statement, double latitude, double longitude) {
 		System.out.println("In Post");
 		latitude = reduceCollisions(latitude);
 		longitude = reduceCollisions(longitude);
@@ -232,14 +232,6 @@ public class MainActivity extends AppCompatActivity {
 			}
 		});
 
-	}
-
-	public ArrayList get_location() {
-		ArrayList<Double> pair = new ArrayList<>();
-		GPSData gps = new GPSData();
-		pair.add(gps.getLongitudeDegrees());
-		pair.add(gps.getLatitudeDegrees());
-		return pair;
 	}
 
 
@@ -283,7 +275,7 @@ public class MainActivity extends AppCompatActivity {
 		}
 	}
 
-	public double reduceCollisions(double coord) {
+	public static double reduceCollisions(double coord) {
 		double addition = Math.random();
 		if (addition > .000001) {
 			addition = addition/100000;

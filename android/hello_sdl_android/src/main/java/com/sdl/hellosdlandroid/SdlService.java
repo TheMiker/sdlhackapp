@@ -1,5 +1,6 @@
 package com.sdl.hellosdlandroid;
 
+import android.Manifest;
 import android.annotation.SuppressLint;
 import android.app.DownloadManager;
 import android.app.Notification;
@@ -8,8 +9,12 @@ import android.app.NotificationManager;
 import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.location.LocationManager;
+import android.os.AsyncTask;
 import android.os.Build;
 import android.os.IBinder;
+import android.support.v4.app.ActivityCompat;
 import android.util.Log;
 import com.smartdevicelink.managers.CompletionListener;
 import com.smartdevicelink.managers.SdlManager;
@@ -45,14 +50,19 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Vector;
 
+import static com.sdl.hellosdlandroid.MainActivity.get_message;
+import static com.sdl.hellosdlandroid.MainActivity.mLocationManager;
+import static com.sdl.hellosdlandroid.MainActivity.myLocationListenerGPS;
+import static com.sdl.hellosdlandroid.MainActivity.post_message;
+
 public class SdlService extends Service {
 	private static final String TAG = "SDL Service";
-	private static final String APP_NAME = "Hello Sdl";
+	private static final String APP_NAME = "Jot";
 	private static final String APP_ID = "1234";
 	private static final String ICON_FILENAME = "hello_sdl_icon.png";
 	private static final String SDL_IMAGE_FILENAME = "sdl_full_image.png";
-	private static final String WELCOME_SHOW = "Welcome to HelloSDL";
-	private static final String WELCOME_SPEAK = "Welcome to Hello S D L";
+	private static final String WELCOME_SHOW = "Welcome to Jot";
+	private static final String WELCOME_SPEAK = "Welcome to Jot";
 	private static final String TEST_COMMAND_NAME = "Test Command";
 	private static final int FOREGROUND_SERVICE_ID = 111;
 	private static final int TCP_PORT = 12247;
@@ -70,10 +80,32 @@ public class SdlService extends Service {
 	public void onCreate() {
 		Log.d(TAG, "onCreate");
 		super.onCreate();
-
 		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
 			enterForeground();
 		}
+		AsyncTask.execute(new Runnable() {
+			@Override
+			public void run() {
+				while (true) {
+					System.out.println("whoa");
+					if (ActivityCompat.checkSelfPermission(getBaseContext(), Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(getBaseContext(), Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
+						mLocationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER,
+								2000,
+								10, myLocationListenerGPS);
+						double gpsLat = mLocationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER).getLatitude();
+						double gpsLon = mLocationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER).getLongitude();
+                        System.out.println("services allowed");
+                        get_message(gpsLat, gpsLon);
+					}
+					try {
+						Thread.sleep(2000);
+					} catch (InterruptedException e) {
+						e.printStackTrace();
+					}
+				}
+
+			}
+		});
 	}
 
 	// Helper method to let the service enter foreground mode
@@ -179,24 +211,32 @@ public class SdlService extends Service {
 	 */
 	private void setVoiceCommands() {
 
-		List<String> list1 = Collections.singletonList("Command One");
-		List<String> list2 = Collections.singletonList("Command two");
+		List<String> list1 = Collections.singletonList("Jot");
 
 		VoiceCommand voiceCommand1 = new VoiceCommand(list1, new VoiceCommandSelectionListener() {
 			@Override
 			public void onVoiceCommandSelected() {
 				Log.i(TAG, "Voice Command 1 triggered");
+				if (ActivityCompat.checkSelfPermission(getBaseContext(), Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(getBaseContext(), Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+					mLocationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER,
+							2000,
+							10, myLocationListenerGPS);
+					double gpsLat = mLocationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER).getLatitude();
+					double gpsLon = mLocationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER).getLongitude();
+					post_message("message", gpsLat, gpsLon);
+				}
+
 			}
 		});
 
-		VoiceCommand voiceCommand2 = new VoiceCommand(list2, new VoiceCommandSelectionListener() {
-			@Override
-			public void onVoiceCommandSelected() {
-				Log.i(TAG, "Voice Command 2 triggered");
-			}
-		});
+//		VoiceCommand voiceCommand2 = new VoiceCommand(list2, new VoiceCommandSelectionListener() {
+//			@Override
+//			public void onVoiceCommandSelected() {
+//				Log.i(TAG, "Voice Command 2 triggered");
+//			}
+//		});
 
-		sdlManager.getScreenManager().setVoiceCommands(Arrays.asList(voiceCommand1, voiceCommand2));
+		sdlManager.getScreenManager().setVoiceCommands(Arrays.asList(voiceCommand1));
 	}
 
 	/**
