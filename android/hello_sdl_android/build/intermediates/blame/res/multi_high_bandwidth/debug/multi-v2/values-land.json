@@ -4,6 +4,25 @@
             "outputFile": "/Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/build/intermediates/incremental/mergeMulti_high_bandwidthDebugResources/merged.dir/values-land/values-land.xml",
             "map": [
                 {
+                    "source": "/Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/6da04f211fc7de444167c3ca2ad2a607/res/values-land/values-land.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "10",
+                        "endOffsets": "222"
+                    },
+                    "to": {
+                        "startLines": "5",
+                        "startColumns": "4",
+                        "startOffsets": "264",
+                        "endLines": "8",
+                        "endColumns": "10",
+                        "endOffsets": "431"
+                    }
+                },
+                {
                     "source": "/Users/MichaelRodriguez/.gradle/caches/transforms-2/files-2.1/716226108515a104f97e708d943e9ca0/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4",

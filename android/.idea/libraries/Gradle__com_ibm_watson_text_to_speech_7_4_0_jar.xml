@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.ibm.watson:text-to-speech:7.4.0@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ibm.watson/text-to-speech/7.4.0/9f1898927f2eb596d0cdde2f34ddcd305c9335b9/text-to-speech-7.4.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ibm.watson/text-to-speech/7.4.0/598f401c19dd75616a23951386ae5a6e84f72751/text-to-speech-7.4.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -14,17 +14,30 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.EditText;
 import android.widget.Toast;
 import android.Manifest;
 import com.google.gson.Gson;
+import com.ibm.cloud.sdk.core.http.HttpConfigOptions;
+import com.ibm.cloud.sdk.core.service.security.IamOptions;
+import com.ibm.watson.speech_to_text.v1.SpeechToText;
+import com.ibm.watson.speech_to_text.v1.model.GetModelOptions;
+import com.ibm.watson.speech_to_text.v1.model.RecognizeOptions;
+import com.ibm.watson.speech_to_text.v1.model.SpeechModel;
+import com.ibm.watson.speech_to_text.v1.model.SpeechRecognitionResults;
+import com.ibm.watson.speech_to_text.v1.websocket.BaseRecognizeCallback;
 import com.smartdevicelink.protocol.enums.ControlFrameTags;
 import com.smartdevicelink.proxy.rpc.GPSData;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 
 import okhttp3.Call;
@@ -35,27 +48,86 @@ import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
 import java.lang.Math;
+
+import android.media.MediaPlayer;
+import android.media.MediaRecorder;
+import android.os.Bundle;
+import android.os.Environment;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
+import java.io.IOException;
+
+import static com.sdl.hellosdlandroid.SdlService.REQUEST_RECORD_AUDIO_PERMISSION;
+import static com.sdl.hellosdlandroid.SdlService.permissionToRecordAccepted;
+import static com.sdl.hellosdlandroid.SdlService.permissions;
+import static com.sdl.hellosdlandroid.SdlService.sdlManager;
+import static com.sdl.hellosdlandroid.SdlService.speakMessage;
 import static com.smartdevicelink.proxy.constants.Names.GPSData;
 import static com.smartdevicelink.proxy.constants.Names.url;
+import static java.lang.Thread.sleep;
 
 public class MainActivity extends AppCompatActivity {
 	private static final String TAG = "MainActivity";
+    public static String ibmKey = "xSHW2KrRgufJINYv7BWTNkhmS2gotM0owo3bkzkL53xA";
+	public static String ibmURL = "https://stream.watsonplatform.net/speech-to-text/api/v1/recognize";
 	public Context mContext;
 	static public LocationManager mLocationManager;
 	public static final int MY_PERMISSIONS_REQUEST_LOCATION = 99;
 	public static LocationListener myLocationListenerGPS;
+	public static SpeechToText mSpeechToText;
+	private String [] permissions = {Manifest.permission.RECORD_AUDIO};
+    private Button send;
+    private MediaRecorder myAudioRecorder;
+    public static String outputFile;
+
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		mContext = this;
+
+        send = (Button) findViewById(R.id.send);
+
+        outputFile = Environment.getExternalStorageDirectory().getAbsolutePath() + "/recording.mpeg";
+        myAudioRecorder = new MediaRecorder();
+        myAudioRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
+        myAudioRecorder.setOutputFormat(MediaRecorder.OutputFormat.MPEG_4);
+        myAudioRecorder.setAudioEncoder(MediaRecorder.OutputFormat.DEFAULT);
+        myAudioRecorder.setOutputFile(outputFile);
+//		ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 1);
+        final EditText mEdit = (EditText)findViewById(R.id.editText);
+        send.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (ActivityCompat.checkSelfPermission(getBaseContext(), Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(getBaseContext(), Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
+                    mLocationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER,
+                            2000,
+                            10, myLocationListenerGPS);
+                    String myPost = mEdit.getText().toString();
+                    final double gpsLat = mLocationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER).getLatitude();
+                    final double gpsLon = mLocationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER).getLongitude();
+                    System.out.println("Permissions Accepted: on Voice Command");
+                    post_message(myPost, gpsLat, gpsLon);
+                    mEdit.setText("");
+					Toast.makeText(getApplicationContext(), "successfully posted!", Toast.LENGTH_LONG).show();
+
+                }
+            }
+        });
+
+
+
 		//If we are connected to a module we want to start our SdlService
 		if (BuildConfig.TRANSPORT.equals("MULTI") || BuildConfig.TRANSPORT.equals("MULTI_HB")) {
 			SdlReceiver.queryForConnectedService(this);
 		} else if (BuildConfig.TRANSPORT.equals("TCP")) {
 			Intent proxyIntent = new Intent(this, SdlService.class);
 			startService(proxyIntent);
-		}
+        }
+		this.requestPermissions(permissions, REQUEST_RECORD_AUDIO_PERMISSION);
 		LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
 		mLocationManager = locationManager;
 		System.out.println("before post");
@@ -99,7 +171,19 @@ public class MainActivity extends AppCompatActivity {
 		System.out.println("GPSLAT: " + gpsLat);
 		double gpsLon = mLocationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER).getLongitude();
 		post_message("I'm just here ... chillin'... at HackMIT", gpsLat, gpsLon);
-//		System.out.println("WHOA: " + gpsLat +" "+ gpsLon);
+
+		//Authenticate using IBM KEY
+		IamOptions options = new IamOptions.Builder()
+				.apiKey(ibmKey)
+				.build();
+		SpeechToText speechToText = new SpeechToText(options);
+		speechToText.setEndPoint(ibmURL);
+		//Disable SSL
+		HttpConfigOptions configOptions = new HttpConfigOptions.Builder()
+				.disableSslVerification(true)
+				.build();
+		speechToText.configureClient(configOptions);
+		mSpeechToText = speechToText;
 	}
 
 	@Override
@@ -184,7 +268,10 @@ public class MainActivity extends AppCompatActivity {
 					try {
 						System.out.println("on response: " + response.body());
 						JSONObject jsonObject = new JSONObject(response.body().string());
-						System.out.println("get_message: reponse: " + jsonObject);
+						System.out.println("get_message: reponse: " + jsonObject.getString("message"));
+						if (sdlManager != null) {
+							speakMessage(jsonObject.getString("message"));
+						}
 					} catch (JSONException e) {
 						e.printStackTrace();
 					}
@@ -281,5 +368,16 @@ public class MainActivity extends AppCompatActivity {
 			addition = addition/100000;
 		}
 		return coord + addition;
+	}
+	@Override
+	public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+		super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+		switch (requestCode){
+			case REQUEST_RECORD_AUDIO_PERMISSION:
+				permissionToRecordAccepted  = grantResults[0] == PackageManager.PERMISSION_GRANTED;
+				break;
+		}
+		if (!permissionToRecordAccepted ) finish();
+
 	}
 }

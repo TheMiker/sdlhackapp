@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.ibm.watson:natural-language-understanding:7.4.0@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ibm.watson/natural-language-understanding/7.4.0/ba975ded09dea453f5eec8137ea402734be2f125/natural-language-understanding-7.4.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ibm.watson/natural-language-understanding/7.4.0/15f29963c91e622e47e72319f91f400c90ba937e/natural-language-understanding-7.4.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

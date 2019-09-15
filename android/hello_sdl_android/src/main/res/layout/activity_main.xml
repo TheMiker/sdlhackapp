@@ -11,11 +11,46 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:text="@string/hello_world"
+        android:textColor="#FFFFFF"/>
     <TextView
         android:id="@+id/mainTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:text="@string/hello_world"
+        android:textColor="#FFFFFF"/>
+
+    <ImageView
+        android:id="@+id/ic_logo"
+        android:layout_width="259dp"
+        android:layout_height="216dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/ic_carlogovec" />
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:height="100dp"
+        android:width="300dp"
+        android:text="send"
+        android:layout_centerInParent="true"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/send"
+        android:layout_centerInParent="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="send me!" />
+    </android.support.design.widget.TextInputLayout>
+
 
 </RelativeLayout>

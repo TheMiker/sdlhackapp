@@ -1,10 +1,13 @@
-#Sun Sep 15 02:48:23 EDT 2019
+#Sun Sep 15 10:03:38 EDT 2019
+path.3=classes2.dex
 path.2=classes_0.dex
 path.1=classes.dex
 path.0=classes.dex
+renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
+base.3=/Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/build/intermediates/dex/multi_high_bandwidthDebug/mergeExtDexMulti_high_bandwidthDebug/out
 base.2=/Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/build/intermediates/dex/multi_high_bandwidthDebug/mergeLibDexMulti_high_bandwidthDebug/out
 base.1=/Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/build/intermediates/dex/multi_high_bandwidthDebug/mergeProjectDexMulti_high_bandwidthDebug/out
 base.0=/Users/MichaelRodriguez/sdl_java_suite-master/android/hello_sdl_android/build/intermediates/dex/multi_high_bandwidthDebug/mergeExtDexMulti_high_bandwidthDebug/out
